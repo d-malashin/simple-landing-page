@@ -1,0 +1,116 @@
+.pros {
+  display: flex;
+  flex-direction: column;
+
+  background: $dark-grey;
+
+  color: #fff;
+  &__list {
+    padding: 0;
+    margin: 10rem 22rem 0 22rem;
+    list-style: none;
+
+    display: flex;
+    flex-wrap: wrap;
+  }
+  &__item {
+    margin-bottom: 8rem;
+    margin-right: 16rem;
+    display: flex;
+    flex-direction: column;
+    flex: 1 1 40%;
+    &:nth-child(2n) {
+      margin-right: 0;
+    }
+  }
+  &__main-features {
+    margin: 0 22rem 10rem 22rem;
+    display: flex;
+    align-items: center;
+  }
+  &__buttons {
+    display: flex;
+  }
+  &__button {
+    display: inline-block;
+    white-space: nowrap;
+    margin-right: 3.2rem;
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+}
+
+.item {
+  position: relative;
+  &__header {
+    font-weight: bold;
+    font-size: 2.4rem;
+    line-height: 2.8rem;
+    color: #ffffff;
+  }
+  &__text {
+    font-size: 2rem;
+    line-height: 2.4rem;
+    color: $grey;
+  }
+  &--award::before {
+    position: absolute;
+    left: -7rem;
+    top: 2rem;
+    content: "";
+    width: 3rem;
+    height: 5rem;
+    background: url("./assets/images/icons/Icon\ -\ Award.svg") no-repeat;
+  }
+  &--chart::before {
+    position: absolute;
+    left: -7rem;
+    top: 2rem;
+    content: "";
+    width: 6rem;
+    height: 5rem;
+    background: url("./assets/images/icons/Icon\ -\ Chart.svg") no-repeat;
+  }
+  &--command::before {
+    position: absolute;
+    left: -7rem;
+    top: 2rem;
+    content: "";
+    width: 6rem;
+    height: 5rem;
+    background: url("./assets/images/icons/Icon\ -\ Command.svg") no-repeat;
+  }
+  &--copy::before {
+    position: absolute;
+    left: -7rem;
+    top: 2rem;
+    content: "";
+    width: 6rem;
+    height: 5rem;
+    background: url("./assets/images/icons/Icon\ -\ Copy.svg") no-repeat;
+  }
+}
+
+.main-features {
+  &__text {
+    margin-right: 10rem;
+  }
+  &__sub-heading {
+    font-weight: bold;
+    font-size: 1.6rem;
+    line-height: 1.6rem;
+    letter-spacing: 0.02em;
+    text-transform: uppercase;
+
+    color: $grey;
+    opacity: $transparent;
+  }
+  &__heading {
+    font-weight: bold;
+    font-size: 3.2rem;
+    line-height: 3.6rem;
+
+    color: #fff;
+  }
+}

@@ -1,0 +1,74 @@
+.about {
+  margin: 0 auto;
+  display: flex;
+  width: 96rem;
+  &__text-content {
+    flex-basis: 0;
+    flex-grow: 1;
+  }
+  &__image {
+    flex-basis: 0;
+    flex-grow: 1;
+  }
+}
+
+.text-content {
+  display: flex;
+  flex-direction: column;
+  &__subheader {
+    font-size: 1.6rem;
+    line-height: 1.6rem;
+    font-weight: bold;
+    color: $grey;
+    text-transform: uppercase;
+  }
+  &__header {
+    font-weight: bold;
+    font-size: 3.2rem;
+    line-height: 3.6rem;
+    color: $dark-grey;
+  }
+  &__text {
+    font-size: 2rem;
+    line-height: 2.4rem;
+    color: $dark-grey;
+    opacity: 0.6;
+  }
+  &__bullets {
+    margin: 0 0 0 8rem;
+    padding: 0;
+    list-style: none;
+  }
+}
+
+.bullet {
+  position: relative;
+  &__header {
+    font-weight: bold;
+    font-size: 2.4rem;
+    line-height: 2.8rem;
+    color: $dark-grey;
+  }
+  &__text {
+    font-size: 2rem;
+    line-height: 2.4rem;
+    color: $dark-grey;
+    opacity: 0.6;
+  }
+  &--mail::before {
+    background: url("./assets/images/icons/Icon\ -\ Mail.svg") no-repeat;
+    content: "";
+    position: absolute;
+    left: -7rem;
+    width: 4.5rem;
+    height: 4rem;
+  }
+  &--anchor::before {
+    background: url("./assets/images/icons/Icon\ -\ Anchor.svg") no-repeat;
+    content: "";
+    position: absolute;
+    left: -7rem;
+    width: 4.5rem;
+    height: 4.5rem;
+  }
+}

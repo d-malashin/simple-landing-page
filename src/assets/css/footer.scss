@@ -1,0 +1,18 @@
+.footer {
+  margin: 4.2rem auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  width: 96rem;
+
+  &__logo path {
+    fill: $dark-grey
+  }
+
+  &__text,
+  &__link {
+    color: $dark-grey;
+    font-size: 1.8rem;
+  }
+}
