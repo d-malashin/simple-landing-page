@@ -24,7 +24,9 @@ module.exports = {
     rules: [
       {
         test: /\.handlebars$/,
-        loader: "handlebars-loader",
+        use: {
+          loader: "handlebars-loader",
+        },
       },
       {
         test: /\.js$/,
@@ -83,7 +85,7 @@ module.exports = {
                 enabled: true,
               },
               pngquant: {
-                quality: "65-90",
+                quality: [0.65, 0.9],
                 speed: 4,
               },
               gifsicle: {
