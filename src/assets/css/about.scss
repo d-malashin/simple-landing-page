@@ -1,14 +1,38 @@
 .about {
   margin: 0 auto;
+  margin-top: 16.4rem;
   display: flex;
-  width: 96rem;
   &__text-content {
-    flex-basis: 0;
-    flex-grow: 1;
+    margin-left: 22rem;
+    width: 55%;
+    @media (max-width: $small) {
+      margin-left: 0;
+    }
+  }
+  &__image-container {
+    margin-right: 22rem;
+    width: 45%;
+  @media (max-width: $small) {
+    margin-right: 0;
+  }
   }
   &__image {
-    flex-basis: 0;
-    flex-grow: 1;
+    width: 100%;
+  }
+
+  @media screen and (min-width: $large+1) {
+    width: 140rem;
+  }
+  @media (max-width: $large) {
+    width: 128rem;
+  }
+  @media (max-width: $medium) {
+    width: 90rem;
+  }
+  @media (max-width: $small) {
+    align-items: center;
+    flex-direction: column;
+    width: 60rem;
   }
 }
 

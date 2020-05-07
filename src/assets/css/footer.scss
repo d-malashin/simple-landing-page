@@ -1,18 +1,31 @@
 .footer {
   margin: 4.2rem auto;
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
 
   width: 96rem;
 
   &__logo path {
-    fill: $dark-grey
+    fill: $dark-grey;
   }
 
   &__text,
   &__link {
     color: $dark-grey;
     font-size: 1.8rem;
+  }
+
+  @media screen and (min-width: $large+1) {
+    width: 140rem;
+  }
+  @media screen and (max-width: $large) {
+    width: 128rem;
+  }
+  @media screen and (max-width: $medium) {
+    width: 90rem;
+  }
+  @media screen and (max-width: $small) {
+    width: 60rem;
   }
 }

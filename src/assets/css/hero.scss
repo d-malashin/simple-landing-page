@@ -2,30 +2,56 @@
   display: flex;
   flex-direction: column;
 
+  margin: 0 auto;
+
   background: url("./assets/images/Hero_BG_Image.jpg");
   background-repeat: no-repeat;
   background-position: top;
   background-size: contain;
+
+  @media screen and (min-width: $large+1) {
+    width: 140rem;
+  }
+  @media (max-width: $large) {
+    width: 128rem;
+  }
+  @media (max-width: $medium) {
+    width: 90rem;
+  }
+  @media (max-width: $small) {
+    width: 60rem;
+  }
 }
 
 .top-bar {
   margin: 0 auto;
   margin-top: 4rem;
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
-
-  width: 96rem;
 
   &__text,
   &__link {
     color: #ffffff;
     font-size: 1.8rem;
   }
+  @media screen and (min-width: $large+1) {
+    width: 140rem;
+  }
+  @media (max-width: $large) {
+    width: 128rem;
+  }
+  @media (max-width: $medium) {
+    width: 90rem;
+  }
+  @media (max-width: $small) {
+    width: 60rem;
+  }
 }
 
 .hero {
-  margin: 10rem auto;
+  margin: 0 auto;
+  margin-top: 10rem;
 
   display: flex;
   flex-direction: column;
@@ -54,20 +80,49 @@
   &__video {
     margin: 8rem auto;
     margin-bottom: 0;
+    box-shadow: 0px 2px 4px rgba(47, 48, 53, 0.15);
+    border-radius: 16px;
+
+    @media screen and (min-width: $large+1) {
+      width: 72rem;
+      height: 40.5rem;
+    }
+    @media (max-width: $large) {
+      width: 56rem;
+      height: 31.5rem;
+    }
   }
   &__form {
+    position: relative;
+    top: 4rem;
     background: linear-gradient(119.81deg, #ffffff 0.34%, $light-grey 48.48%),
       $light-grey;
     box-shadow: 0px 2px 6px rgba(47, 48, 53, 0.1),
       0px 1px 1px rgba(47, 48, 53, 0.1);
     border-radius: 1.6rem;
-    width: 72rem;
+
+    @media screen and (min-width: $large+1) {
+      width: 62.4rem;
+    }
+    @media (max-width: $large) {
+      width: 62rem;
+    }
+    @media (max-width: $medium) {
+      width: 50rem;
+    }
+    @media (max-width: $small) {
+      width: 50rem;
+    }
   }
 }
 
 .form {
+  margin: 0 auto;
   margin-top: 3.2rem;
   padding: 4.8rem;
+  @media (max-width: $small) {
+    padding: 2rem;
+  }
   display: flex;
   &__content {
     flex-basis: 0;

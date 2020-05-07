@@ -4,6 +4,8 @@ const HtmlWebpackPlugin = require("html-webpack-plugin");
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 const autoprefixer = require("autoprefixer");
 const cssnano = require("cssnano");
+const { CleanWebpackPlugin } = require('clean-webpack-plugin');
+
 
 const isDevelopment = process.env.NODE_ENV !== "production";
 
@@ -101,7 +103,7 @@ module.exports = {
     ],
   },
   plugins: [
-    /** Since Webpack 4 */
+    new CleanWebpackPlugin(),
     new webpack.LoaderOptionsPlugin({
       options: {
         handlebarsLoader: {},

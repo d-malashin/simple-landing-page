@@ -3,9 +3,14 @@
 $yellow: #ffd300;
 $blue: #2134b2;
 $dark-grey: #2f3035;
-$grey: #86899B;
-$light-grey: #F3F4F9;
+$grey: #86899b;
+$light-grey: #f3f4f9;
 $transparent: 0.75;
+
+//breakpoints
+$small: 600px;
+$medium: 900px;
+$large: 1280px;
 
 // Global styles and elements
 html,
@@ -27,6 +32,19 @@ h1 {
   display: flex;
   flex-direction: column;
   width: 140rem;
+  
+  @media screen and (min-width: $large+1) {
+    width: 140rem;
+  }
+  @media screen and (max-width: $large) {
+    width: 128rem;
+  }
+  @media screen and (max-width: $medium) {
+    width: 90rem;
+  }
+  @media screen and (max-width: $small - 1) {
+    width: 60rem;
+  }
 }
 
 .button {

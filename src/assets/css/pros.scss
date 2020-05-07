@@ -1,4 +1,5 @@
 .pros {
+  margin: 0 auto;
   display: flex;
   flex-direction: column;
 
@@ -12,6 +13,10 @@
 
     display: flex;
     flex-wrap: wrap;
+    @media (max-width: $small) {
+      flex-direction: column;
+      margin: 10rem 5rem 0 15rem;
+    }
   }
   &__item {
     margin-bottom: 8rem;
@@ -22,11 +27,21 @@
     &:nth-child(2n) {
       margin-right: 0;
     }
+    @media (max-width: $medium) {
+      margin-bottom: 2rem;
+      margin-right: 8rem;
+    }
+
   }
   &__main-features {
     margin: 0 22rem 10rem 22rem;
     display: flex;
     align-items: center;
+
+    @media (max-width: $medium) {
+      flex-direction: column;
+      text-align: center;
+    }
   }
   &__buttons {
     display: flex;
@@ -38,6 +53,18 @@
     &:last-child {
       margin-right: 0;
     }
+  }
+  @media screen and (min-width: $large+1) {
+    width: 140rem;
+  }
+  @media (max-width: $large) {
+    width: 128rem;
+  }
+  @media (max-width: $medium) {
+    width: 90rem;
+  }
+  @media (max-width: $small) {
+    width: 60rem;
   }
 }
 
@@ -53,6 +80,19 @@
     font-size: 2rem;
     line-height: 2.4rem;
     color: $grey;
+  }
+  @media (max-width: $medium) {
+    &__header {
+      font-size: 1.8rem;
+      line-height: 1.8rem;
+      margin-bottom: 0.2rem;
+    }
+    &__text {
+      font-size: 1.3rem;
+      margin-top: 0.3rem;
+    }
+  }
+  @media (max-width: $small) {
   }
   &--award::before {
     position: absolute;
@@ -95,6 +135,9 @@
 .main-features {
   &__text {
     margin-right: 10rem;
+    @media (max-width: $medium) {
+      margin-right: 0;
+    }
   }
   &__sub-heading {
     font-weight: bold;
@@ -105,6 +148,11 @@
 
     color: $grey;
     opacity: $transparent;
+
+    @media (max-width: $medium) {
+      font-size: 1.6rem;
+      line-height: 1.6rem;
+    }
   }
   &__heading {
     font-weight: bold;
@@ -112,5 +160,10 @@
     line-height: 3.6rem;
 
     color: #fff;
+
+    @media (max-width: $medium) {
+      font-size: 2rem;
+      line-height: 2rem;
+    }
   }
 }
