@@ -62,6 +62,9 @@
     margin: 0 auto;
     color: #ffffff;
     font-size: 4.8rem;
+    @media screen and (max-width: $small) {
+      font-size: 2.8rem;
+    }
   }
   &__text {
     margin: 0 auto;
@@ -71,6 +74,9 @@
     font-size: 2.4rem;
     text-align: center;
     font-weight: normal;
+    @media screen and (max-width: $small) {
+      font-size: 1.8rem;
+    }
   }
   &__buttons {
     margin: 4.8rem auto;
@@ -99,7 +105,7 @@
       min-height: 40.5rem;
     }
     @media (max-width: $large) {
-      width: 60%;
+      width: 70%;
       min-height: 30rem;
     }
   }

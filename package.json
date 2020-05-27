@@ -6,8 +6,10 @@
   "scripts": {
     "start": "webpack-dev-server --config ./build/webpack.config.js --watch",
     "build": "NODE_ENV=production webpack --config ./build/webpack.config.js --mode=production",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "deploy": "gh-pages -d dist"
   },
+  "homepage": "https://d-malashin.github.io/simple-landing-page/",
   "author": "Denis Malashin",
   "license": "ISC",
   "devDependencies": {
@@ -21,6 +23,7 @@
     "cssnano": "^4.1.10",
     "extract-loader": "^5.0.1",
     "file-loader": "^6.0.0",
+    "gh-pages": "^2.2.0",
     "handlebars": "^4.7.6",
     "handlebars-loader": "^1.7.1",
     "html-loader": "^1.1.0",
@@ -33,6 +36,6 @@
     "url-loader": "^4.1.0",
     "webpack": "^4.43.0",
     "webpack-cli": "^3.3.11",
-    "webpack-dev-server": "^3.10.3"
+    "webpack-dev-server": "^3.11.0"
   }
 }
