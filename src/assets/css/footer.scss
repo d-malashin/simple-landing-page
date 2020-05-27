@@ -23,12 +23,6 @@
     width: 140rem;
   }
   @media screen and (max-width: $large) {
-    width: 128rem;
-  }
-  @media screen and (max-width: $medium) {
-    width: 90rem;
-  }
-  @media screen and (max-width: $small) {
     width: 90%;
   }
 }

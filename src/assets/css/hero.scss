@@ -145,8 +145,8 @@
     flex-direction: column;
   }
   &__content {
-    flex-basis: 0;
     flex-grow: 1;
+    margin-inline-end: 3rem;
   }
   &__header {
     font-size: 3.2rem;
@@ -180,9 +180,9 @@
   }
   &__bullet {
     padding-left: 0;
+    text-align: start;
   }
   &__fields {
-    flex-basis: 0;
     flex-grow: 1;
     display: flex;
     flex-direction: column;
